@@ -1,1 +1,81 @@
-/* A remplir */
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #F6F6F6;
+}
+
+.logo,
+.title {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+:root {
+  --main-color: #9356DC;
+  --second-color: #FF79DA;
+  --third-color: #99E2D0;
+}
+
+.btn {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  text-decoration: none;
+  color: #FFFFFF;
+  border-radius: 25%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  height: 4em;
+  position: relative;
+  z-index: 2;
+}
+
+.go-back {
+  position: absolute;
+  left: 3em;
+  color: #353535;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.location {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  height: 3em;
+  position: relative;
+  z-index: 1;
+}
+
+.fa-location-dot {
+  color: #353535;
+}
+
+.presentation {
+  text-align: center;
+}
+
+.presentation h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.presentation p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
