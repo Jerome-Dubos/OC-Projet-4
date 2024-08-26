@@ -19,7 +19,6 @@ a {
     text-decoration: none;
 }
 
-.logo,
 .title {
     font-family: 'Shrikhand', sans-serif;
     font-weight: 400;
@@ -61,7 +60,7 @@ a {
     background: $gradient-purple;
     background-clip: text;
     color:transparent;
-    transition: opacity 200ms;
+    transition: opacity 500ms;
     &:hover {
         opacity: 100%;
     }
