@@ -65,45 +65,38 @@
   padding: 15px;
   margin-bottom: 60px;
 }
-
-.restaurants-cards {
+.restaurants .restaurants-cards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 18px;
 }
-
-.card {
+.restaurants .restaurants-cards .card {
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   height: 251px;
   position: relative;
 }
-
-.card img {
+.restaurants .restaurants-cards .card img {
   object-fit: cover;
   height: 75%;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-
-.card-title {
-  font-size: 16px;
-}
-
-.card-title {
+.restaurants .restaurants-cards .card .card-title {
+  font-size: 18px;
   margin-top: 10px;
   margin-bottom: 5px;
   padding-left: 10px;
 }
-
-.card-subtitle {
+.restaurants .restaurants-cards .card .card-subtitle {
+  font-weight: 300;
+  font-size: 17px;
   margin: 0;
   padding-left: 10px;
 }
-
-.fa-heart {
+.restaurants .restaurants-cards .card .fa-heart {
   position: absolute;
   font-size: 20px;
   right: 15px;
@@ -111,8 +104,7 @@
   width: 22px;
   height: 22px;
 }
-
-.new {
+.restaurants .restaurants-cards .card .new {
   width: 80px;
   height: 29px;
   background-color: #99E2D0;
@@ -135,12 +127,12 @@
     display: flex;
     flex-direction: row;
   }
-  .restaurants-cards {
+  .restaurants .restaurants-cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .restaurants-cards a {
+  .restaurants .restaurants-cards a {
     width: 48%;
   }
 }
