@@ -106,9 +106,6 @@
   width: 22px;
   height: 22px;
 }
-.restaurants .restaurants-cards .card .fa-heart:hover {
-  background: linear-gradient(#9356DC, #FF79DA);
-}
 .restaurants .restaurants-cards .card .new {
   width: 80px;
   height: 29px;

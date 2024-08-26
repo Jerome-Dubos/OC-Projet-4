@@ -49,6 +49,17 @@ a {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
+.fa-heart__purple {
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
+  transition: opacity 200ms;
+}
+.fa-heart__purple:hover {
+  opacity: 100%;
+}
+
 header {
   display: flex;
   justify-content: center;

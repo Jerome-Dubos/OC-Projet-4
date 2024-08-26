@@ -1,7 +1,7 @@
 $purple: #9356DC;
 $pink: #FF79DA;
 $turquoise: #99E2D0;
-$btn-color:linear-gradient($purple, $pink);
+$gradient-purple:linear-gradient($purple, $pink);
 
 
 
@@ -45,7 +45,7 @@ a {
 .btn--purple-gradient {
         display: flex;
         justify-content: center;
-        background: $btn-color;
+        background: $gradient-purple;
         color: white;
         border-radius: 25px;
         width: 218px;
@@ -56,6 +56,16 @@ a {
         }
 }
 
+.fa-heart__purple {
+    opacity: 0;
+    background: $gradient-purple;
+    background-clip: text;
+    color:transparent;
+    transition: opacity 200ms;
+    &:hover {
+        opacity: 100%;
+    }
+}
 
 header {
     display: flex;

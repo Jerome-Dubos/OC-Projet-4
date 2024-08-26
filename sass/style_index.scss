@@ -1,6 +1,7 @@
 $purple: #9356DC;
 $pink: #FF79DA;
 $turquoise: #99E2D0;
+$gradient-purple:linear-gradient($purple, $pink);
 
 // location
 .location {
@@ -106,9 +107,6 @@ $turquoise: #99E2D0;
                 bottom: 18px;
                 width: 22px;
                 height: 22px;
-                &:hover{
-                    background: linear-gradient($purple, $pink);
-                }
             }
             .new {
                 width: 80px;
