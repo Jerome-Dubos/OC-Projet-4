@@ -5,8 +5,8 @@ $btn-color:linear-gradient($purple, $pink);
 
 
 @mixin btn-color-hover {
-    opacity: 90%;
-    box-shadow: 0px 8px 20px 0px #00000040;
+    opacity: 85%;
+    box-shadow: 0px 4px 15px 0px #00000040;
 }
 
 * {
@@ -70,6 +70,10 @@ header {
     height: 4em;
     position: relative;
     z-index: 2;
+    img {
+        width: 197px;
+        height: 36px;
+    }
 }
 
 footer {

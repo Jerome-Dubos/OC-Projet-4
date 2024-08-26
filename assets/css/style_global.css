@@ -47,8 +47,8 @@ a {
 }
 
 .btn--purple-gradient:hover {
-  opacity: 90%;
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2509803922);
+  opacity: 85%;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 header {
@@ -60,6 +60,10 @@ header {
   height: 4em;
   position: relative;
   z-index: 2;
+}
+header img {
+  width: 197px;
+  height: 36px;
 }
 
 footer {
