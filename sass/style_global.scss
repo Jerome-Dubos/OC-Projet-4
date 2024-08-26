@@ -33,7 +33,6 @@ a {
 
 .btn {
     display: flex;
-    justify-content: center;
     align-items: center;
     color: black;
     height: 72.38px;   
@@ -44,6 +43,8 @@ a {
 }
 
 .btn--purple-gradient {
+        display: flex;
+        justify-content: center;
         background: $btn-color;
         color: white;
         border-radius: 25px;

@@ -58,8 +58,9 @@
   width: 24px;
   background-color: #9356DC;
   color: white;
-  position: absolute;
-  left: -10px;
+  position: relative;
+  left: 0;
+  transform: translateX(-50%);
 }
 
 .restaurants {
@@ -130,6 +131,9 @@
   .fonctionnement .menu {
     display: flex;
     flex-direction: row;
+  }
+  .fonctionnement .btn {
+    width: 33%;
   }
   .restaurants .restaurants-cards {
     display: flex;
