@@ -39,6 +39,7 @@ body {
     height: 72.38px;   
     box-shadow: 0px 4px 10px 0px #00000040;
     border-radius: 20px;
+    background-color: #F6F6F6;
 }
 
 .btn--purple-gradient {
@@ -52,7 +53,7 @@ body {
             height: 50px;
 }
 
-.btn:hover {
+.btn--purple-gradient:hover {
     @include btn-color-hover;
 }
 

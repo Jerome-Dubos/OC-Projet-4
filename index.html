@@ -15,15 +15,73 @@
     <script src="https://kit.fontawesome.com/9a6f634a2f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header>
         <div class="logo">ohmyfood</div>
     </header>
+
     <main>
-        <section class="location"><i class="fa-solid fa-location-dot"></i>Paris, Belleville</section>
+        <section class="location"><i class="fa-solid fa-location-dot"aria-hidden="true"></i>Paris, Belleville</section>
         <section class="presentation">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <div class="bouton"><a href="#" class="btn btn--round btn--purple-gradient">Explorer nos restaurants (ajouter lien)</a></div>
+            <div class="bouton"><a href="#restaurants" class="btn btn--round btn--purple-gradient">Explorer nos restaurants</a></div>
+        </section>
+
+        <section class="fonctionnement">
+            <div class="titre-section"><h1>Fonctionnement</h1></div>
+            <div class="menu">
+                <div class="btn"><div class="rond">1</div><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>Choisissez un restaurant</div>
+                <div class="btn"><div class="rond">2</div><i class="fa-solid fa-list-ul" aria-hidden="true"></i>Composez votre menu</div>
+                <div class="btn"><div class="rond">3</div><i class="fa-solid fa-store" aria-hidden="true"></i>Dégustez au restaurant</div>
+            </div>
+        </section>
+
+        <section class="restaurants">
+            <div class="titre-section"><h1 id="restaurants">Restaurants</h1></div>
+
+            <div class="restaurants-cards">
+                <a href="#">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image du restaurant La palette du goût">
+                        <div class="card-content">
+                            <h2 class="card-title">La palette du goût</h2>
+                            <p class="card-subtitle">Ménilmontant</p>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image du restaurant La palette du goût">
+                        <div class="card-content">
+                            <h2 class="card-title">La palette du goût</h2>
+                            <p class="card-subtitle">Ménilmontant</p>
+                            <i class="fa-thin fa-heart"></i>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image du restaurant La palette du goût">
+                        <div class="card-content">
+                            <h2 class="card-title">La palette du goût</h2>
+                            <p class="card-subtitle">Ménilmontant</p>
+                            <i class="fa-thin fa-heart"></i>
+                        </div>
+                    </article>
+                </a>
+                <a href="#">
+                    <article class="card">
+                        <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image du restaurant La palette du goût">
+                        <div class="card-content">
+                            <h2 class="card-title">La palette du goût</h2>
+                            <p class="card-subtitle">Ménilmontant</p>
+                            <i class="fa-thin fa-heart"></i>
+                        </div>
+                    </article>
+                </a>
+            </div>
         </section>
     </main>
     <footer>
@@ -31,8 +89,8 @@
         <div class="title">ohmyfood</div>
         <div class="links">
                 <ul>
-                    <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                    <li><a href="#"><i class="fa-solid fa-utensils" aria-hidden="true"></i>Proposer un restaurant</a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-angle" aria-hidden="true"></i>Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
                     <li><a href="mailto: contact@ohmyfood.fr">Contact</a></li>
                 </ul>
