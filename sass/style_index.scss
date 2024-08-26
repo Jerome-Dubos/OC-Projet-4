@@ -105,6 +105,9 @@ $turquoise: #99E2D0;
                 bottom: 18px;
                 width: 22px;
                 height: 22px;
+                &:hover{
+                    background: linear-gradient($purple, $pink);
+                }
             }
             .new {
                 width: 80px;
