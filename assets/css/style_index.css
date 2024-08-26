@@ -29,6 +29,7 @@
 .fonctionnement .titre-section {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 15px;
 }
 .fonctionnement .menu {
   display: flex;
@@ -130,6 +131,7 @@
   .restaurants .restaurants-cards {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   .restaurants .restaurants-cards a {
