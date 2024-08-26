@@ -14,10 +14,9 @@ body {
   font-size: 30px;
 }
 
-:root {
-  --main-color: #9356DC;
-  --second-color: #FF79DA;
-  --third-color: #99E2D0;
+.bouton {
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
@@ -32,8 +31,8 @@ body {
 }
 
 .btn--purple-gradient {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  color: #FFFFFF;
+  background: linear-gradient(#9356DC, #FF79DA);
+  color: white;
 }
 
 .btn--round {
@@ -42,8 +41,65 @@ body {
   height: 50px;
 }
 
-.footer {
+.btn:hover {
+  opacity: 90%;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2509803922);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  height: 4em;
+  position: relative;
+  z-index: 2;
+}
+
+footer {
   background-color: #353535;
+  padding: 22px;
+}
+footer .title {
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 16px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer i {
+  margin-right: 10px;
+}
+
+@media (min-width: 1024px) {
+  footer nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 60px;
+    height: 114px;
+  }
+  footer nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+  }
+  footer nav .title {
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style_global.css.map */
