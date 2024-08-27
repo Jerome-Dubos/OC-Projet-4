@@ -20,13 +20,60 @@ main .menu {
   bottom: 50px;
   padding-left: 10px;
 }
-main .menu .title {
+main .menu .menu-content {
   padding: 15px;
 }
-main .menu .fa-heart {
+main .menu .menu-content .title {
+  padding-bottom: 15px;
+}
+main .menu .menu-content .fa-heart {
   position: absolute;
   right: 40px;
   top: 23px;
+}
+main .menu .menu-content .menu-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  padding-bottom: 5px;
+}
+main .menu .menu-content .menu-plats {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+main .menu .menu-content .menu-plats .btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+main .menu .menu-content .menu-plats .btn .plats-title {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+main .menu .menu-content .menu-plats .btn .plats-subtitle {
+  font-weight: 300;
+  font-size: 15px;
+}
+main .menu .menu-content .menu-plats .price {
+  position: relative;
+  left: 90%;
+  bottom: 33px;
+}
+
+@media (min-width: 1024px) {
+  .menu-responsive {
+    display: flex;
+    justify-content: center;
+  }
+  .menu-responsive .menu {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style_restaurants.css.map */

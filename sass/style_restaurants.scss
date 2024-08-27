@@ -1,3 +1,8 @@
+$purple: #9356DC;
+$pink: #FF79DA;
+$turquoise: #99E2D0;
+$gradient-purple:linear-gradient($purple, $pink);
+
 header {
     box-shadow: none;
         .arrow-back {
@@ -20,14 +25,62 @@ main {
         position: relative;
         bottom: 50px;
         padding-left: 10px;
-        .title {
+        .menu-content {
             padding: 15px;
+            .title {
+                padding-bottom: 15px;
+            }
+            .fa-heart {
+                position: absolute;
+                right: 40px;
+                top: 23px;
+            }
+            .menu-subtitle {
+                font-weight: 300;
+                font-size: 16px;
+                border-bottom: 3px solid $turquoise ;
+                width: 40px;
+                padding-bottom: 5px;
+            }
+            .menu-plats {
+                padding-top: 15px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 20px;
+                .btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding-left: 10px;
+                    .plats-title {
+                        font-weight: 500;
+                        font-size: 18px;
+                        padding-bottom: 3px;
+                    }
+                    .plats-subtitle {
+                        font-weight: 300;
+                        font-size: 15px;
+                    }
+                }
+                .price {
+                        position: relative;
+                        left: 90%;
+                        bottom: 33px;
+                    }
+                    
+            }
         }
-        .fa-heart {
-            position: absolute;
-            right: 40px;
-            top: 23px;
+    }
+}
+
+// Responsive Desktop
+@media (min-width: 1024px) {
+    .menu-responsive {
+        display: flex;
+        justify-content: center;
+        .menu {
+        width: 75%;
         }
-        
     }
 }
