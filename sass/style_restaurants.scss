@@ -8,7 +8,7 @@ header {
         .arrow-back {
             color: #353535;
             font-size: 25px;
-            position: fixed;
+            position: absolute;
             left: 3%;
         }
 }
@@ -47,32 +47,79 @@ main {
                 display: flex;
                 flex-direction: column;
                 padding-bottom: 20px;
+                gap: 12px;
                 .btn {
                     display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: flex-start;
+                    flex-direction: row;
+                    justify-content: space-between;
                     padding-left: 10px;
-                    .plats-title {
+                    position: relative;
+                    &:hover {
+                        & > .price-select {
+                            & > .select-btn {
+                                transform: scaleX(1);
+                            }
+                            & > .price {
+                                transform: translateX(0);
+                            }
+                        }
+                    }
+                    .text-descriptif {
+                        width: 60%;
+                        .plats-title {
                         font-weight: 500;
                         font-size: 18px;
                         padding-bottom: 3px;
-                    }
-                    .plats-subtitle {
+                        margin: 0;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        }   
+                        .plats-subtitle {
                         font-weight: 300;
                         font-size: 15px;
+                        margin: 0;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        }
                     }
-                }
-                .price {
-                        position: relative;
-                        left: 90%;
-                        bottom: 33px;
+                    .price-select {
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 15px;
+                        height: 100%;
+                        .price {
+                            transform: translate(100%);
+                            transition: all 300ms ease-out;
+                        }
+                        .select-btn {
+                            width: 60px;
+                            height: 100%;
+                            background-color: $turquoise;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            border-radius: 0px 15px 15px 0px;
+                            transform: scaleX(0);
+                            transform-origin: right;
+                            transition: all 300ms ease-out;
+                            i {
+                                font-size: 25px;
+                            }
+                        }
                     }
-                    
+                }        
             }
         }
     }
 }
+
+.bouton {
+    margin-top: 30px;
+}
+
 
 // Responsive Desktop
 @media (min-width: 1024px) {
