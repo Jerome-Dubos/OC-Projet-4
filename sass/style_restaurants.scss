@@ -2,6 +2,10 @@ $purple: #9356DC;
 $pink: #FF79DA;
 $turquoise: #99E2D0;
 $gradient-purple:linear-gradient($purple, $pink);
+$anim-dur: 700ms;
+$anim-delay: 200ms;
+$plat-delay: $anim-dur + $anim-delay;
+$dessert-delay: $plat-delay + $plat-delay;
 
 header {
     box-shadow: none;
@@ -118,6 +122,33 @@ main {
 
 .bouton {
     margin-top: 30px;
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.entrees {
+    animation: apparition $anim-dur $anim-delay;
+    animation-fill-mode: backwards;
+}
+
+.plats {
+    animation: apparition $anim-dur $plat-delay;
+    animation-fill-mode: backwards;
+}
+
+.desserts {
+    animation: apparition $anim-dur $dessert-delay;
+    animation-fill-mode: backwards;
 }
 
 
