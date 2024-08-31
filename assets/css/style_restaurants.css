@@ -120,17 +120,17 @@ main .menu .menu-content .menu-plats .btn .price-select .select-btn i {
   }
 }
 .entrees {
-  animation: apparition 700ms 200ms;
+  animation: apparition 700ms 1700ms;
   animation-fill-mode: backwards;
 }
 
 .plats {
-  animation: apparition 700ms 900ms;
+  animation: apparition 700ms 2400ms;
   animation-fill-mode: backwards;
 }
 
 .desserts {
-  animation: apparition 700ms 1800ms;
+  animation: apparition 700ms 3100ms;
   animation-fill-mode: backwards;
 }
 

@@ -3,9 +3,9 @@ $pink: #FF79DA;
 $turquoise: #99E2D0;
 $gradient-purple:linear-gradient($purple, $pink);
 $anim-dur: 700ms;
-$anim-delay: 200ms;
+$anim-delay: 1700ms;
 $plat-delay: $anim-dur + $anim-delay;
-$dessert-delay: $plat-delay + $plat-delay;
+$dessert-delay: $plat-delay + $anim-dur;
 
 header {
     box-shadow: none;
