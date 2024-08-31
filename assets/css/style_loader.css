@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+
+.section {
+  background-color: #99E2D0;
+  height: 500px;
+  line-height: 500px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.loader-quart {
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 6px solid transparent;
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1000ms linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360);
+  }
+}
+
+/*# sourceMappingURL=style_loader.css.map */
