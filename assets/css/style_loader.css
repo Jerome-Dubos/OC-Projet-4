@@ -35,15 +35,23 @@ body {
   border: 6px solid transparent;
   border-top-color: white;
   border-radius: 50%;
-  animation: spin 1000ms linear infinite;
+  -webkit-animation: spin 1000ms linear infinite;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 }
 
