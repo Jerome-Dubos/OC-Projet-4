@@ -86,19 +86,24 @@
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-.restaurants .restaurants-cards .card .card-title {
+.restaurants .restaurants-cards .card .card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurants .restaurants-cards .card .card-content .card-title {
   font-size: 18px;
   margin-top: 8px;
   margin-bottom: 3px;
   padding-left: 10px;
 }
-.restaurants .restaurants-cards .card .card-subtitle {
+.restaurants .restaurants-cards .card .card-content .card-subtitle {
   font-weight: 300;
   font-size: 17px;
   margin: 0;
   padding-left: 10px;
 }
-.restaurants .restaurants-cards .card .fa-heart {
+.restaurants .restaurants-cards .card .card-content .fa-heart {
   position: absolute;
   font-size: 20px;
   right: 15px;
@@ -118,6 +123,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
+  margin: 0;
 }
 
 @media (min-width: 1024px) {

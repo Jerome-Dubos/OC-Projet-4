@@ -88,27 +88,32 @@ $gradient-purple:linear-gradient($purple, $pink);
                 width: 100%;
                 border-radius: 15px 15px 0px 0px;
             }
-            .card-title {
-                font-size: 18px;
-                margin-top: 8px;
-                margin-bottom: 3px;
-                padding-left: 10px;
+            .card-content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .card-title {
+                    font-size: 18px;
+                    margin-top: 8px;
+                    margin-bottom: 3px;
+                    padding-left: 10px;
+                }
+                .card-subtitle {
+                    font-weight: 300;
+                    font-size: 17px;
+                    margin: 0;
+                    padding-left: 10px;
+                }
+                .fa-heart {
+                    position: absolute;
+                    font-size: 20px;
+                    right: 15px;
+                    bottom: 18px;
+                    width: 22px;
+                    height: 22px;
+                }
             }
-            .card-subtitle {
-                font-weight: 300;
-                font-size: 17px;
-                margin: 0;
-                padding-left: 10px;
-            }
-            .fa-heart {
-                position: absolute;
-                font-size: 20px;
-                right: 15px;
-                bottom: 18px;
-                width: 22px;
-                height: 22px;
-            }
-            .new {
+                .new {
                 width: 80px;
                 height: 29px;
                 background-color: $turquoise;
@@ -120,6 +125,7 @@ $gradient-purple:linear-gradient($purple, $pink);
                 position: absolute;
                 top: 10px;
                 right: 10px;
+                margin: 0;
             }
         }
     }
